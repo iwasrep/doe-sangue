@@ -1,6 +1,6 @@
 # Sistema de Cadastro de Doadores de Sangue
 
-- Sistema básico de cadastro de doadores de sangue feito como estudo de ReactJS
+- Projeto desenvolvido para facilitar a informação criando dados virtual de doadores voluntários de sangue que, catalogados, estão à disposição para eventuais chamados de pacientes que venham necessitar de doação de sangue e hemoderivados.
 
 ## Como usar isto?
 
