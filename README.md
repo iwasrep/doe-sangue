@@ -5,19 +5,35 @@
 ## Como usar isto?
 
 - Basta fazer o download do repositório no seu computador
-- Acessar a pasta
+- Acessar a pasta Backend
 - Digitar o comando abaixo
 
 ```
 npm install ou yarn install
 ```
-## Abra o endereço http://localhost:3000
+## Instale o banco de dados PostgreSQL
+- Após a instalação, crie o banco de dados com nome "doesangue";
+- Crie uma tabela "doadores" com os campos nome, email, telefone, tipo manualmente ou use o script:
+```
+CREATE TABLE public.doadores (
+  created_at timestamp without time zone NOT NULL,
+  tipo character varying(6) NULL,
+  telefone character varying(255) NULL,
+  email character varying(255) NULL,
+  nome character varying(255) NULL,
+  id integer NOT NULL
+);
+ALTER TABLE
+  public.doadores
+ADD
+  CONSTRAINT doadores_pkey PRIMARY KEY (id)
+```
+
+## Inicie o servidor
 ```
 npm start ou yarn start
 ```
-## Em Produção
-```
-npm run build ou yarn run build
-```
+
+## Abra o endereço http://localhost:3000
 
 # Enjoy!

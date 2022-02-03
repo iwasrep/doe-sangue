@@ -1,28 +1,28 @@
-document.querySelector('header button').addEventListener("click", function(){
-    document.querySelector('.form').classList.toggle('hide')    
+document.querySelector('header button').addEventListener("click", function() {
+    document.querySelector('.form').classList.toggle('hide')
 })
 
 $(document).ready(function() {
-    $("#telefone").focusout(function(){
+    $("#telefone").focusout(function() {
 
         var telefone, element;
-    
+
         element = $(this);
-    
+
         element.unmask();
-    
+
         telefone = element.val().replace(/\D/g, '');
-    
-        if(telefone.length > 10) {
-    
+
+        if (telefone.length > 10) {
+
             element.mask("(99) 99999-999?9");
-    
+
         } else {
-    
+
             element.mask("(99) 9999-9999?9");
-    
+
         }
-    
+
     }).trigger('focusout');
 
     $('.owl-doadores').owlCarousel({
@@ -38,7 +38,7 @@ $(document).ready(function() {
                 items: 1
             },
             600: {
-                items: 2
+                items: 3
             },
             1000: {
                 items: 4,
